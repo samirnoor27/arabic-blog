@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدونة الأفق التقني | الأخبار، المقالات والبرامج</title>
+  <meta name="description" content="بوابة مدونة عربية حديثة للمقالات، الأخبار، وتنزيل البرامج والألعاب.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">الأفق التقني</span>
+      </a>
+      <nav class="nav-menu">
+        <button class="filter-btn active" data-category="all">الكل</button>
+        <button class="filter-btn" data-category="articles">مقالات</button>
+        <button class="filter-btn" data-category="news">أخبار</button>
+        <button class="filter-btn" data-category="software">برامج وألعاب</button>
+        <a href="admin/" class="admin-link">لوحة التحكم ⚙️</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="تبديل الوضع">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container hero-content">
+      <h1>عالم التكنولوجيا بين يديك</h1>
+      <p>تصفح أحدث المقالات، الأخبار التقنية، وتحميل أفضل البرامج والألعاب بروابط مباشرة.</p>
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="ابحث عن مقال، خبر، أو برنامج...">
+        <span class="search-icon">🔍</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="container main-content">
+    <div class="section-header">
+      <h2 id="section-title">أحدث المنشورات</h2>
+      <span id="posts-count" class="badge">0 منشورات</span>
+    </div>
+    <div id="posts-grid" class="posts-grid">
+      <!-- يتم تحميل البطاقات ديناميكياً عن طريق JavaScript -->
+    </div>
+    <div id="no-results" class="no-results hidden">
+      <span>🔎</span>
+      <p>لم نجد أي نتائج تطابق بحثك.</p>
+    </div>
+  </main>
+
+  <div id="article-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="modal-body">
+        <!-- يتم ملء التفاصيل عبر JS -->
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 مدونة الأفق التقني. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
